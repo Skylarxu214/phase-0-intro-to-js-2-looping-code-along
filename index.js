@@ -18,26 +18,43 @@
 wrapGifts(gifts);*/
 
 
-/*const message = "birthday";
-const names = ["Ada", "Brendan", "Ali"];
+const message = "surprise";
+const names = ['Lisa', 'Kaitlin', 'Jan' ];
+let arr = [];
 function writeCards(names, message){
     for (let i = 0; i < names.length ; i ++ ){
-        console.log(`Thank you, ${names[i]}, for the wonderful ${message} gift!`);
-        debugger;
-    }
+          arr[i] = `Thank you, ${names[i]}, for the wonderful ${message} gift!`;
+         //console.log(`Thank you, ${names[i]}, for the wonderful ${message} gift!`)
+       debugger
+       }
 
-    return names;
+    return arr;
 }
 
-writeCards(names,message);*/
 
-const num = 0;
+writeCards(names,message);
+
+
+
+
+/*const num = 0;
 function countDown(num) {
     let i = 10;
     while (i >= num){
        console.log(i);
        i --;
     }
-
+    return num
 }
-countDown(num);
+countDown(num);*/
+
+function countDown(num){
+  let i = 0;
+  while(i <= num ){
+    console.log(num - i);
+    i ++;
+  }
+}
+
+countDown(10);
+countDown(4);
